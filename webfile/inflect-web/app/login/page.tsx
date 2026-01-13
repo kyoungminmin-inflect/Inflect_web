@@ -174,11 +174,7 @@ export default function LoginPage() {
             <Button onClick={handleGoogleLogin} disabled={oauthLoading} className="w-full">
               {oauthLoading ? "Google 로그인 중..." : "Google로 계속"}
             </Button>
-            <p className="mt-2 text-xs text-slate-500">
-              * 현재 MVP는 Google 로그인으로 계정이 자동 생성됩니다.
-              <br />
-              * 콜백 URL: <span className="font-mono">{typeof window !== "undefined" ? `${window.location.origin}/auth/callback` : ""}</span>
-            </p>
+           
           </div>
 
           <div className="my-6 flex items-center gap-3">
