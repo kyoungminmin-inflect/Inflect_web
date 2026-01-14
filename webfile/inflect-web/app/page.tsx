@@ -109,10 +109,6 @@ export default function HomePage() {
               </Link>
             </div>
 
-            <p className="mt-3 text-xs text-slate-500">
-              * 홈페이지는 소개용 MVP입니다. 회사 정보 입력/분석 대시보드는 다음 단계에서 구현합니다.
-            </p>
-
             <div className="mt-8 grid gap-3 md:grid-cols-3">
               <Card className="rounded-3xl border border-slate-200 bg-white/90 p-5 shadow-sm">
                 <div className="text-sm font-semibold text-slate-900">정확도 중심</div>
