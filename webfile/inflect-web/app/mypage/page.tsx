@@ -31,11 +31,7 @@ export default function MyPage() {
   const [saving, setSaving] = useState(false);
   const [upgrading, setUpgrading] = useState(false);
 
-  const planBadge = useMemo(() => {
-    return plan === "Pro"
-      ? { label: "Pro", cls: "bg-[var(--brand)] text-white" }
-      : { label: "Basic", cls: "bg-slate-100 text-slate-800" };
-  }, [plan]);
+  
 
   useEffect(() => {
     let mounted = true;
