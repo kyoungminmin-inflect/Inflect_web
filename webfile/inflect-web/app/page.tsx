@@ -301,7 +301,7 @@ export default function HomePage() {
           <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
             <div className="max-w-2xl">
               <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                보안은 “옵션”이 아니라 기본값.
+                보안을 전제로 한 설계
               </h2>
               <p className="mt-3 text-slate-600">
                 INFLECT는 민감한 기업 정보를 다루므로, 제품 설계 단계부터 보안을 최우선으로 둡니다.
