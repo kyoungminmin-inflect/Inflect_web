@@ -412,7 +412,7 @@ export default function HomePage() {
               </ul>
 
               <div className="mt-6 text-2xl font-semibold text-slate-900">
-                {billing === "monthly" ? p.priceMonthly : p.priceYearly}
+                {billing === "monthly" ? p.priceMonthly }
                 <span className="text-sm font-medium text-slate-500">
                   {" "}
                   / {billing === "monthly" ? "월" : "연"}
