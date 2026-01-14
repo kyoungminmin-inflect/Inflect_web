@@ -130,7 +130,7 @@ export default function MyPage() {
       // TODO: 실제 결제/구독 로직 연결 (Stripe)
       await new Promise((r) => setTimeout(r, 500));
       setPlan("Pro");
-      setMessage({ type: "success", text: "Pro로 업그레이드되었습니다(데모)." });
+      setMessage({ type: "success", text: "Pro로 업그레이드되었습니다." });
     } catch {
       setMessage({ type: "error", text: "업그레이드 중 오류가 발생했습니다." });
     } finally {
@@ -269,7 +269,7 @@ export default function MyPage() {
                     onClick={upgradeToPro}
                     disabled={plan === "Pro" || upgrading}
                   >
-                    {plan === "Pro" ? "이미 Pro 입니다" : upgrading ? "업그레이드 중..." : "Pro로 업그레이드(데모)"}
+                    {plan === "Pro" ? "이미 Pro 입니다" : upgrading ? "업그레이드 중..." : "Pro로 업그레이드"}
                   </Button>
                 </div>
 
