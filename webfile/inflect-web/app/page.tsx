@@ -343,7 +343,7 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-2 md:items-center">
             <div>
               <h2 className="text-2xl font-semibold tracking-tight">
-                월 구독으로, 매달 업데이트되는 미국 진출 브리핑을 받으세요.
+                매달 업데이트 되는 리포트로 시장 변화를 놓치지 마세요
               </h2>
               
               <ul className="mt-6 space-y-2 text-sm text-white/85">
