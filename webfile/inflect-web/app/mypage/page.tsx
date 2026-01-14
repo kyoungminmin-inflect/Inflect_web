@@ -166,9 +166,7 @@ export default function MyPage() {
           </div>
 
           <div className="flex items-center gap-2">
-            <span className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold ${planBadge.cls}`}>
-              {planBadge.label} Plan
-            </span>
+            
             <Link
               href="/ai-diagnosis"
               className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm transition hover:bg-slate-50"
