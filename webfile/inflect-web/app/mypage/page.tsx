@@ -262,13 +262,13 @@ export default function MyPage() {
                   </p>
 
                   <Button
-                    variant="outline"
-                    className="mt-3 w-full"
-                    onClick={upgradeToPro}
-                    disabled={plan === "Pro" || upgrading}
-                  >
-                    {plan === "Pro" ? "이미 Pro 입니다" : upgrading ? "업그레이드 중..." : "Pro로 업그레이드"}
-                  </Button>
+  className="mt-3 w-full text-white hover:brightness-105"
+  style={{ background: "var(--brand)" }}
+  onClick={upgradeToPro}
+  disabled={plan === "Pro" || upgrading}
+>
+  {plan === "Pro" ? "이미 Pro 입니다" : upgrading ? "업그레이드 중..." : "Pro로 업그레이드(데모)"}
+</Button>
                 </div>
 
               
