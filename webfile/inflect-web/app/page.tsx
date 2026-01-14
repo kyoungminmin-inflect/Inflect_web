@@ -376,9 +376,7 @@ export default function HomePage() {
                 </Link>
               </div>
 
-              <div className="mt-4 text-xs text-slate-500">
-                * 결제/구독은 추후 Stripe 연결로 활성화됩니다.
-              </div>
+              
             </div>
           </div>
         </div>
