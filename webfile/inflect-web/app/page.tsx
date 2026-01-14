@@ -48,7 +48,7 @@ const plans = [
     features: ["Basic 전체 기능", "전문가 리뷰 & 해석", "전략적 방향성 제안", "30/60/90일 실행 로드맵"],
     priceMonthly: "25만원",
     priceYearly: "250만원",
-    cta: "파일럿 신청",
+    cta: "구독",
     href: "/pilot",
     highlight: true,
   },
