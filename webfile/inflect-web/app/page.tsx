@@ -57,7 +57,7 @@ const plans = [
     tag: "Portfolio-level Analysis",
     desc: "여러 스타트업을 같은 기준으로 한 번에 비교/판단합니다.",
     features: ["다수 스타트업 일괄 분석", "포트폴리오 비교 대시보드", "투자 검토용 요약 리포트"],
-    priceMonthly: "40만원",
+    priceMonthly: "",
     priceYearly: "400만원",
     cta: "Contact Sales",
     href: "/service",
