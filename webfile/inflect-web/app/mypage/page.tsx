@@ -273,9 +273,7 @@ export default function MyPage() {
                   </Button>
                 </div>
 
-                <div className="text-xs text-slate-400">
-                  * 결제/구독 관리는 Stripe 등 결제 시스템 연결 시 실제 동작으로 교체하세요.
-                </div>
+              
               </div>
             </div>
           </Card>
