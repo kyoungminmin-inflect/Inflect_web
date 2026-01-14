@@ -345,9 +345,7 @@ export default function HomePage() {
               <h2 className="text-2xl font-semibold tracking-tight">
                 월 구독으로, 매달 업데이트되는 미국 진출 브리핑을 받으세요.
               </h2>
-              <p className="mt-3 text-white/80">
-                INFLECT는 “결정에 필요한 정보”를 매달 제공하는 구독 서비스입니다.
-              </p>
+              
               <ul className="mt-6 space-y-2 text-sm text-white/85">
                 <li>• CEO-ready 요약 + 근거 자료</li>
                 <li>• 유사 기업/경쟁 지도 + 포지셔닝</li>
