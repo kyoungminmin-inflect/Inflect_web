@@ -157,11 +157,7 @@ export default function MyPage() {
             <h1 className="text-3xl font-semibold tracking-tight text-slate-900">마이페이지</h1>
             <p className="mt-2 text-sm text-slate-600">계정 정보 및 구독 플랜을 관리합니다.</p>
             {!loadingProfile && (
-              <p className="mt-2 text-xs text-slate-500">
-                로그인: <span className="font-medium text-slate-700">{fullName || "(이름 없음)"}</span>{" "}
-                <span className="text-slate-400">•</span>{" "}
-                <span className="font-medium text-slate-700">{email}</span>
-              </p>
+              
             )}
           </div>
 
@@ -224,9 +220,13 @@ export default function MyPage() {
                 </div>
               )}
 
-              <Button onClick={saveAccount} className="w-full" disabled={saving || loadingProfile}>
-                {saving ? "저장 중..." : "저장"}
-              </Button>
+              <Button
+  onClick={saveAccount}
+  className="w-full text-white hover:brightness-105"
+  disabled={saving || loadingProfile}
+>
+  {saving ? "저장 중..." : "저장"}
+</Button>
             </div>
           </Card>
 
@@ -267,7 +267,7 @@ export default function MyPage() {
   onClick={upgradeToPro}
   disabled={plan === "Pro" || upgrading}
 >
-  {plan === "Pro" ? "이미 Pro 입니다" : upgrading ? "업그레이드 중..." : "Pro로 업그레이드(데모)"}
+  {plan === "Pro" ? "이미 Pro 입니다" : upgrading ? "업그레이드 중..." : "Pro로 업그레이드"}
 </Button>
                 </div>
 
