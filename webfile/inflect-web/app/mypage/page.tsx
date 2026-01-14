@@ -130,7 +130,7 @@ export default function MyPage() {
       // TODO: 실제 결제/구독 로직 연결 (Stripe)
       await new Promise((r) => setTimeout(r, 500));
       setPlan("Pro");
-      setMessage({ type: "success", text: "Pro로 업그레이드되었습니다." });
+      setMessage({ type: "success", text: "Pro로 업그레이드되었습니다(데모)." });
     } catch {
       setMessage({ type: "error", text: "업그레이드 중 오류가 발생했습니다." });
     } finally {
@@ -157,12 +157,18 @@ export default function MyPage() {
             <h1 className="text-3xl font-semibold tracking-tight text-slate-900">마이페이지</h1>
             <p className="mt-2 text-sm text-slate-600">계정 정보 및 구독 플랜을 관리합니다.</p>
             {!loadingProfile && (
-              
+              <p className="mt-2 text-xs text-slate-500">
+                로그인: <span className="font-medium text-slate-700">{fullName || "(이름 없음)"}</span>{" "}
+                <span className="text-slate-400">•</span>{" "}
+                <span className="font-medium text-slate-700">{email}</span>
+              </p>
             )}
           </div>
 
           <div className="flex items-center gap-2">
-            
+            <span className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold ${planBadge.cls}`}>
+              {planBadge.label} Plan
+            </span>
             <Link
               href="/ai-diagnosis"
               className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-800 shadow-sm transition hover:bg-slate-50"
@@ -220,13 +226,9 @@ export default function MyPage() {
                 </div>
               )}
 
-              <Button
-  onClick={saveAccount}
-  className="w-full text-white hover:brightness-105"
-  disabled={saving || loadingProfile}
->
-  {saving ? "저장 중..." : "저장"}
-</Button>
+              <Button onClick={saveAccount} className="w-full" disabled={saving || loadingProfile}>
+                {saving ? "저장 중..." : "저장"}
+              </Button>
             </div>
           </Card>
 
@@ -262,16 +264,18 @@ export default function MyPage() {
                   </p>
 
                   <Button
-  className="mt-3 w-full text-white hover:brightness-105"
-  style={{ background: "var(--brand)" }}
-  onClick={upgradeToPro}
-  disabled={plan === "Pro" || upgrading}
->
-  {plan === "Pro" ? "이미 Pro 입니다" : upgrading ? "업그레이드 중..." : "Pro로 업그레이드"}
-</Button>
+                    variant="outline"
+                    className="mt-3 w-full"
+                    onClick={upgradeToPro}
+                    disabled={plan === "Pro" || upgrading}
+                  >
+                    {plan === "Pro" ? "이미 Pro 입니다" : upgrading ? "업그레이드 중..." : "Pro로 업그레이드(데모)"}
+                  </Button>
                 </div>
 
-              
+                <div className="text-xs text-slate-400">
+                  * 결제/구독 관리는 Stripe 등 결제 시스템 연결 시 실제 동작으로 교체하세요.
+                </div>
               </div>
             </div>
           </Card>
