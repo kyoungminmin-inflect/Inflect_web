@@ -217,7 +217,7 @@ export default function HomePage() {
           <div className="grid gap-8 md:grid-cols-3">
             <div>
               <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-                대표가 “결정”하기 쉬운 정보만.
+                대표님의 의사결정에 도움을 드립니다.
               </h2>
               <p className="mt-3 text-slate-600">
                 입력된 회사 정보를 바탕으로, 미국 시장 조사와 케이스 분석을 결합해 매달 업데이트되는
