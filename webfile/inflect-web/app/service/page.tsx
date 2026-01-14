@@ -62,24 +62,12 @@ export default function ServicePage() {
             * 실제 보안/보관 정책 문구는 법무/보안 정책 확정 후 교체하세요.
           </p>
         </Card>
-      </div>
 
-      <Card>
-        <h2 className="text-lg font-semibold">워크플로우</h2>
-        <div className="mt-4 grid gap-3 md:grid-cols-4">
-          {[
-            ["입력", "회사/시장/제품/팀 정보"],
-            ["업로드", "사업/투자 계획서 등"],
-            ["분석", "모델 추론 + 근거 정리"],
-            ["리포트", "대시보드/이메일 업데이트"],
-          ].map(([t, d]) => (
-            <div key={t} className="glass rounded-xl p-4">
-              <div className="text-sm font-semibold">{t}</div>
-              <div className="mt-1 text-sm text-muted">{d}</div>
-            </div>
-          ))}
-        </div>
-      </Card>
-    </div>
+
+
+
+
+
+        
   );
 }
